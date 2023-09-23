@@ -1,13 +1,118 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Outfit', 'Ubuntu', sans-serif 'Oxygen';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p{
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+h1, h2{
+  font-size: 4.5rem;
+}
+
+.app{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(15, 15, 10, 0.4);
+  color: whitesmoke;
+}
+
+.app::before{
+  content: '';
+  background: url(asset/weatherappbg.jpg) center center/cover no-repeat; 
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+  
+}
+
+.app .search{
+  text-align: center;
+  padding-top: 1rem;
+
+}
+
+.app input{
+  padding: 0.7rem 1.5rem;
+  margin-top: 5%;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  color:rgba(255, 255, 255, 0.8);
+  background-color: rgba(15, 15, 10, 0.2);
+  border-color: rgba(15, 15, 10, 0.1);
+  border: solid 0.5px rgba(255, 255, 255, 0.4);
+  
+}
+
+input::placeholder{
+  color:rgba(255, 255, 255, 0.8);
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.container{
+  max-width: 700px;
+  height: 700px;
+  margin: auto ;
+  padding: 0 1rem;
+  top: 12%;
+  position: relative;
+  display: flex ;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.app .top{
+  -webkit-text-stroke: 1px rgba(15, 15, 10, 0.1) !important;
+  width: 100%;
+  margin: 1rem auto;
+  border-radius: 12px !important;
+  padding: 2%;
+  text-align: flex !important;
+  text-shadow: 1px 1px 2px gray, 0 0 1em rgba(15, 15, 10, 0.1), 0 0 0.2em black !important;
+}
+
+
+
+.app .description{
+  position: relative;
+  right: -90% ;
+  transform-origin: 0 0;
+  transform: rotate(270deg);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
+
+.app .bottom{
+  display: flex !important;
+  justify-content: space-evenly;
+   text-align: center;
+   width: 100%;
+   margin: 1rem auto !important;
+   padding: 1rem;
+   border-radius: 12px !important;
+   background-color: rgba(255, 255, 250, 0.2);
+    
+}
+
+.bold{
+  font-weight: 700px;
 }
