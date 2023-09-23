@@ -18,13 +18,8 @@ function App() {
       setLocation("");
     }
   };
-  
-  
-//----------------------------------------------------------------
-  
-  
-  
-  return (
+
+    return (
     <div className="app">
       <div className="search">
         <input type="text"
